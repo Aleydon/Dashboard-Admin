@@ -1,4 +1,4 @@
-import { Title } from '../title';
+import { Title } from './title';
 
 interface HeaderProps {
   title: string;

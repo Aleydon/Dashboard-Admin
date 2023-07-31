@@ -1,5 +1,5 @@
-import { Header } from '../header';
-import { Content } from '../content';
+import { Header } from './header';
+import { Content } from './contents';
 
 import { ReactNode } from 'react';
 
@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export const Layout = ({ title, subTitle, children }: LayoutProps) => {
   return (
-    <div className="flex flex-col bg-gray-400 h-screen  w-screen ">
+    <div className="flex flex-col bg-gray-100 h-screen w-scren">
       <Header title={title} subTitle={subTitle} />
       <Content>{children}</Content>
     </div>

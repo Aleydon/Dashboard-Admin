@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { HomeIcon } from '../icons/home';
-import { NotificationsIcon } from '../icons/notifications';
-import { SettingsIcon } from '../icons/settings';
-import { MenuItem } from '../menuItem';
-import { LogoutIcon } from '../icons/logout';
+import { MenuItem } from './menuItems';
+import { HomeIcon } from '@/icons/homeIcon';
+import { SettingsIcon } from '@/icons/settingsIcon';
+import { NotificationsIcon } from '@/icons/notificationsIcon';
+import { LogoutIcon } from '@/icons/logoutIcon';
 
 export const NavBar = () => {
   return (

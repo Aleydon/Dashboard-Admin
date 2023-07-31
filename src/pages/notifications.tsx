@@ -1,4 +1,4 @@
-import { Layout } from '@/components/layout';
+import { Layout } from '@/components/template/layout';
 
 export default function Notifications() {
   return (

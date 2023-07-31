@@ -1,6 +1,6 @@
-import { NavBar } from '@/components/navBar';
-
+import { NavBar } from '@/components/template/navBar';
 import '@/styles/globals.css';
+
 import type { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
