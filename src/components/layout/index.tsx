@@ -1,4 +1,3 @@
-import { NavBar } from '../navBar';
 import { Header } from '../header';
 import { Content } from '../content';
 
@@ -10,12 +9,11 @@ interface LayoutProps {
   children?: ReactNode;
 }
 
-export const Layout = ({ title, subTitle, children }: LayoutProps) => (
-  <div className="flex h-screen w-screen">
-    <NavBar />
-    <div className="flex flex-col bg-gray-400 w-full p-7 ">
+export const Layout = ({ title, subTitle, children }: LayoutProps) => {
+  return (
+    <div className="flex flex-col bg-gray-400 w-full ">
       <Header title={title} subTitle={subTitle} />
       <Content>{children}</Content>
     </div>
-  </div>
-);
+  );
+};
