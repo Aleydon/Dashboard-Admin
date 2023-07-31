@@ -11,9 +11,11 @@ interface LayoutProps {
 }
 
 export const Layout = ({ title, subTitle, children }: LayoutProps) => (
-  <div>
+  <div className="flex h-screen w-screen">
     <NavBar />
-    <Header title={title} subTitle={subTitle} />
-    <Content>{children}</Content>
+    <div className="flex flex-col bg-gray-400 w-full p-7">
+      <Header title={title} subTitle={subTitle} />
+      <Content>{children}</Content>
+    </div>
   </div>
 );
