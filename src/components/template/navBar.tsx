@@ -9,11 +9,17 @@ import { LogoutIcon } from '@/icons/logoutIcon';
 
 export const NavBar = () => {
   return (
-    <aside className="flex flex-col">
+    <aside
+      className="
+      dark:bg-gray-800 dark:text-gray-200
+      bg-gray-200 text-gray-700
+        flex flex-col"
+    >
       <div
-        className="flex flex-col justify-center h-20 w-20
+        className="
+          flex flex-col justify-center h-20 w-20
           bg-gradient-to-r from-indigo-500 via-transparent
-         to-purple-400 text-center"
+        to-purple-400 text-center"
       >
         <Link href="/">
           <Image src="/logo.svg" alt="logo" height={70} width={70} priority />
