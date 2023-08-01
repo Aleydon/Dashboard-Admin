@@ -11,15 +11,25 @@ export const NavBar = () => {
   return (
     <aside
       className="
-      dark:bg-gray-800 dark:text-gray-200
-      bg-gray-200 text-gray-700
-        flex flex-col"
+          flex
+          flex-col
+        bg-gray-200
+        text-gray-700
+        dark:bg-gray-800
+        dark:text-gray-300"
     >
       <div
         className="
-          flex flex-col justify-center h-20 w-20
-          bg-gradient-to-r from-indigo-500 via-transparent
-        to-purple-400 text-center"
+          flex
+          flex-col
+          justify-center
+          h-20
+          w-20
+          bg-gradient-to-r
+        from-indigo-500
+          via-transparent
+        to-purple-400
+          text-center"
       >
         <Link href="/">
           <Image src="/logo.svg" alt="logo" height={70} width={70} priority />
@@ -35,8 +45,16 @@ export const NavBar = () => {
           text="Notifications"
         />
       </ul>
+
       <ul>
-        <MenuItem url="/" icon={LogoutIcon} text="Exit" />
+        <MenuItem
+          className="
+            hover:text-gray-300
+            hover:bg-red-500"
+          url="/"
+          icon={LogoutIcon}
+          text="Logout"
+        />
       </ul>
     </aside>
   );

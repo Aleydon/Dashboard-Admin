@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import Link from 'next/link';
 
 interface MenuItemProps {
@@ -10,19 +9,31 @@ interface MenuItemProps {
 
 export const MenuItem = ({ icon, url, text, className }: MenuItemProps) => (
   <>
-    <li className="hover:bg-gray-200">
+    <li
+      className="
+      hover:bg-gray-300
+      dark:hover:bg-gray-700"
+    >
       <Link
         className={`
-          flex flex-col
+          flex
+          flex-col
           justify-center
           items-center
-          h-20 w-20
-          dark:text-gray-200
+          h-20
+          w-20
           ${className}`}
         href={url}
       >
         {icon}
-        <span className="text-xs text-gray-600">{text}</span>
+        <span
+          className="
+            text-xs
+          text-gray-600
+          dark:text-gray-200"
+        >
+          {text}
+        </span>
       </Link>
     </li>
   </>

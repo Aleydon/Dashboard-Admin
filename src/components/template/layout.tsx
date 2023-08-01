@@ -13,9 +13,14 @@ export const Layout = ({ title, subTitle, children }: LayoutProps) => {
   return (
     <div
       className="
+        flex
+        flex-col
+      bg-gray-300
+      text-gray-700
       dark:bg-gray-900
-      dark:text-gray-200
-        flex flex-col bg-gray-100 h-screen w-screen"
+      dark:text-gray-300
+        h-screen
+        w-screen"
     >
       <Header title={title} subTitle={subTitle} />
       <Content>{children}</Content>
